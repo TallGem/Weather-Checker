@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Inter:wght@500&family=Kanit&family=Sen:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
+    <script src="https://kit.fontawesome.com/40c0e3125a.js" crossorigin="anonymous"></script>
+    <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
+</head>
+<body class="container-fluid">
+    <div id="load"></div>
+    <h1 class="text-center fw-bolder wethColor container">MyWeather APP</h1>
+    <section class="row">
+        <div class="col-lg-8">
+            <div class="row mt-5">
+               <div class=" col-8">
+                <input type="text" class="form-control py-3" id="inp">
+                <label for="inp"></label>
+               </div>
+                <div class="col-4">
+                    <button class="btn btn-success py-3" onclick="getData()">Search</button>
+                </div>
+            </div>
+
+            <div>
+                <h1 class=" bigTemp text-light" id="show">26℃<h1></h1>
+            </div>
+            
+            <div>
+                <h1 class= "text-light" id="location1">Lagos,NG</h1>
+            </div>
+
+            <div>
+                <h5 class="text-light" id="description1">light rain</h5>
+            </div>
+        </div>
+
+
+        <div class="col-lg-4 bg-white">
+            <div>
+                <h2 class="text-secondary text-center">Weather Details</h2>
+
+                 <div>
+                    <h5>
+                        Location <span class="material-symbols-outlined"> distance</span> - 
+                        <span id="location2" class="fs-3">Lagos,NG </span> 
+                    </h5>
+                </div>
+
+                <div>
+                    <h5>Description <span class="material-symbols-outlined">weather_mix</span>
+                                    <span class="material-symbols-outlined">partly_cloudy_day</span> - 
+                                    <span class="fs-3" id="description2">overcast clouds</span>
+                    </h5> 
+                </div>
+
+                <div>
+                    <h5>Humidity <span class="material-symbols-outlined"> humidity_percentage</span>  - 
+                        <span class="fs-3" id="humidity">92%</span>
+                    </h5>
+                </div>
+
+                <div>
+                    <h5>
+                        Wind <span class="material-symbols-outlined">wind_power</span>  - 
+                        <span class="fs-3" id="wind">3.66</span> m/s
+                    </h5>
+                </div>
+
+                <hr>
+
+                <div>
+                    <h5>
+                        Min Temp <span class="material-symbols-outlined">  thermometer_loss</span>  - 
+                        <span class="fs-3" id="minTemp">27.18</span>℃
+                    </h5>
+                </div>
+
+                <div>
+                    <h5>
+                        Max Temp <span class="material-symbols-outlined">thermometer_gain</span>  - 
+                        <span class="fs-3" id="maxTemp">27.19</span>℃
+                    </h5>
+                </div>
+
+                <div>
+                    <h5>
+                        Feels <span class="material-symbols-outlined"> dew_point</span>  - 
+                        <span class="fs-3" id="feel">28.66</span>℃
+                    </h5>
+                </div>
+
+                <div>
+                    <h5>
+                        Pressure <span class="material-symbols-outlined">compare_arrows </span>  - 
+                        <span class="fs-3" id="pressure">1012</span>pha
+                    </h5>
+                </div>
+            </div>
+           
+        </div>
+        
+    </section>
+   
+
+</body>
+</html>
